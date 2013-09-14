@@ -1,0 +1,29 @@
+!!!5
+html
+    head
+        title=title
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css")
+        link(rel="styleshee" href="https://c9.io/nobody122/ghim/workspace/style.css")
+        script(src="/socket.io/socket.io.js")
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script(src="https://c9.io/nobody122/ghim/workspace/client.js")
+        script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+        
+    body
+        div(id="header")
+        div(id="container" style="margin-left:300px;width:300px;margin-top:50px" )
+            div( id="error" class="alert alert-danger fade in" style="display:none") asd
+                button(type="button" class="close" data-dismiss="alert" aria-hidden="true") x
+            div( id="info" class="alert alert-success fade in" style="display:none") asd
+                button(type="button" class="close" data-dismiss="alert" aria-hidden="true") x
+            div(style="height:300px;width:300px;border:2px solid #eaeaea ;overflow:auto" id="board") 
+                div(id="mainboard" style="padding-top:30px")
+                    ul(id="main" style=" font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;font-size: 11px")
+            form(class="form-horizontal" role="form")
+                input(type="text" id="username" class="form-control" placeholder="your name")
+                p
+                textarea(id="message" class="form-control" placeholder="type something") 
+            div(style="height: 100px;width: 250px;border: 2px solid #eaeaea;overflow: auto;position: absolute;top: 300px;left: 10px;") 
+                ul(id="user_ol" style=" font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;font-size: 11px")
+        div(id="footer")
